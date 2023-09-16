@@ -1,0 +1,54 @@
+/* ========================about============ */
+
+/* page banner  */
+
+.page_banner {
+    background: var(--main-color);
+  }
+  
+  .page_banner_content {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .page_route {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .page_route a {
+    color: var(--white-color);
+    margin-right: 5px;
+    transition: 0.3s;
+  }
+  
+  .page_route a:hover {
+    color: var(--second-color);
+  }
+  
+  .banner_inner h2 {
+    font-size: var(--l-title);
+  }
+  
+  .banner_inner {
+    text-align: center;
+    color: var(--white-color);
+  }
+  
+  @media screen and (max-width: 992px) {
+    .page_banner_content {
+      height: 330px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .page_banner_content {
+      height: 200px;
+    }
+  }
+  
+  /* page banner end  */
