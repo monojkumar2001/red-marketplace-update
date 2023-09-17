@@ -3224,7 +3224,7 @@ ul.tranding-cat {
   display: flex;
   flex-direction: column;
 }
-a.tranding-cat-lin {
+.tranding-cat-lin {
   padding: 10px 50px;
   background: #ebebeb;
   border-radius: 8px;
@@ -3232,13 +3232,14 @@ a.tranding-cat-lin {
   color: var(--second-color);
   transition: 0.3s;
   margin: 5px 0;
-  white-space: nowrap;
-}
-a.tranding-cat-lin button{
-  border: none;
-  background: none;
   font-size: 18px;
   font-weight: 600;
+  white-space: nowrap;
+}
+.tranding-cat-lin:hover{
+  background: #f88282;
+  color: var(--white-color);
+
 }
 .items-traits-con h4{
   color: var(--second-color);
@@ -3320,11 +3321,6 @@ transform: rotate(180deg);
   visibility: visible;
   top: 5px;
   z-index: 2;
-}
-
-a.tranding-cat-lin:hover {
-  background: #f88282;
-  color: var(--white-color);
 }
 
 .profile-des p {
@@ -3584,7 +3580,6 @@ span.file-up:hover {
   ul.item-info li {
     border-right: 2px solid var(--second-color);
     width: 25%;
-    padding: 0;
   }
 }
 

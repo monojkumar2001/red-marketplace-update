@@ -126,6 +126,9 @@
     .road-map-inner {
         height: 100px;
     }
+    .items-sidebar .tranding-bar{
+        padding: 30px 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {

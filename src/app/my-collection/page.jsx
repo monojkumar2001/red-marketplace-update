@@ -1,8 +1,6 @@
 import PageBanner from '@/components/Banner/PageBanner'
 import NftCard from '@/components/NftCard/NftCard'
 import CollectionModel from '@/components/Popup/CollectionModel'
-import React from 'react'
-
 const MyCollection = () => {
   return (
     <>

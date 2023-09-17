@@ -86,7 +86,7 @@ const CollectionHeader = () => {
                 }`}
                 onClick={() => toggleHandler(1)}
               >
-                <Link href={"/collection/items"}>
+                <Link href={"/collection"}>
                   <svg
                     width="20"
                     height="20"

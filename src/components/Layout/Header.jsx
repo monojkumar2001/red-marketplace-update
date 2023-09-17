@@ -171,7 +171,7 @@ function Header() {
                       </li>
                       <li>
                         <Link
-                          href="/collection/items"
+                          href="/collection"
                           className="dp-link"
                           onClick={_toggleSidebar}
                         >

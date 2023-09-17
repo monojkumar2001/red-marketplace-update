@@ -73,7 +73,7 @@ const Sidebar = ({sidebarActive , _toggleSidebar2}) => {
                 <button className='collection-item-link'> Earnings</button>
               </Link>
             </li>
-            <li className="edit-collection-item">
+            <li className="edit-collection-item" onClick={_toggleSidebar2}>
               <Link href='/user-mint' className="tabs">
               <button className='collection-item-link'>Drop Page</button>
               </Link>

@@ -6,13 +6,15 @@ import '../styles/style.css';
 import '../styles/MakeOffer.css';
 import '../styles/NftModelCongratulation.css';
 import '../styles/WalletConnet.css';
+import '../styles/edit-create-collection.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/responsive.css';
 import '../styles/dashboard-responsive.css'
 import { Urbanist } from 'next/font/google'
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/footer';
+import Loading from '@/components/Loading/Loading';
 const  urbanist =  Urbanist({ subsets: ['latin'] })
 
 export const metadata = {
@@ -28,7 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body suppressContentEditableWarning className={urbanist.className}>
         <Header/>
-        {children}
+      {children}
         {/* <Footer/> */}
         <Footer/>
         </body>

@@ -14,21 +14,11 @@ const ItemSidebar = () => {
         <div className="tranding-bar">
           <h4>Status</h4>
           <ul className="tranding-cat">
-            <Link href="/" className="tranding-cat-lin">
-              <button>All</button>
-            </Link>
-            <Link href="/" className="tranding-cat-lin">
-              <button>Listed</button>
-            </Link>
-            <Link href="/" className="tranding-cat-lin">
-              <button> On auction</button>
-            </Link>
-            <Link href="/" className="tranding-cat-lin">
-              <button> New</button>
-            </Link>
-            <Link href="/" className="tranding-cat-lin">
-              <button> Has offers</button>
-            </Link>
+              <button className="tranding-cat-lin">All</button>
+              <button className="tranding-cat-lin">Listed</button>
+              <button className="tranding-cat-lin">On auction</button>
+              <button className="tranding-cat-lin"> New</button>
+              <button className="tranding-cat-lin">Has offers</button>
           </ul>
           <div className="items-traits-con">
             <h4>Traits</h4>
