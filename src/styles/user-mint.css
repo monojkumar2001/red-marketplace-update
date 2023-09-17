@@ -101,9 +101,10 @@ gap: 15px;
 }
 .mint-public-mint-btn {
     background: var(--main-color);
-    padding: 5px 30px;
+    padding: 12px 30px;
     font-weight: 700;
-    font-size: 18;
+    font-size: 18px;
+    border-radius: 4px;
     color: var(--white-color);
     border: none;
 }
@@ -251,4 +252,29 @@ gap: 15px;
 }
 .new-create-contents .my-collection-btn{
     width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .mint-user-img-items {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mint-roodmap-items{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mint-roadmap-img{
+        width: 100%;
+        height: 100%;
+    }
+    .mint-roadmap-content{
+        width: 100%;
+    }
+    .mint-team-items{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

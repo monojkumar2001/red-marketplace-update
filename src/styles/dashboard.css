@@ -62,11 +62,7 @@
 }
 
 .sidebar-menu-icons {
-  left: -2px;
-  top: -37px;
-  /* display: none; */
-  position: absolute;
-  cursor: pointer;
+  display: none;
 }
 
 .sidebar-menu-icons svg {
@@ -534,10 +530,6 @@ button.creator {
   display: flex;
   align-items: center;
   gap: 0 20px;
-}
-.table-box-activity{
-  height: 200px;
-  overflow: auto;
 }
 .user-list-all-items {
   display: flex;

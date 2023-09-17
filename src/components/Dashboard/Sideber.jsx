@@ -1,11 +1,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-const Sideber = () => {
-  const [sidebarActive, setSidebarActive] = useState([false]);
-  const toggleSidebar = () => {
-    setSidebarActive(!sidebarActive);
-  };
+const Sideber = ({sidebarActive,toggleSidebar}) => {
+  
 
   const [toggle, setToggle] = useState(1);
   const togglebtn = (index) => {

@@ -79,7 +79,7 @@
     display: none;
     position: absolute;
   left: 30px;
-  top: 30px;
+  top: 100px;
 }
 @media screen and (max-width: 1200px) {
     .edit-create-collection-sidebar{
@@ -87,7 +87,7 @@
         align-items: center;
         position: fixed;
         height: 100vh;
-        background: #03091fe3;
+        background: var(--main-color);
         bottom: 0;
         box-shadow: -2px 5px 13px 0px #0b0c11;
         top: 0;
@@ -107,8 +107,8 @@
         background: var(--main-color);
         display: grid;
         grid-template-columns:100%;
-        margin-top: 70px;
-        padding:100px 50px 20px 50px;
+        margin-top: 0px;
+        padding:150px 10px 20px 10px;
         position: relative;
       }
       .close-menus {
@@ -116,6 +116,10 @@
     }
     .show-navs{
         display: flex;
+    }
+    .edit-collection-items .tabs .collection-item-link{
+      text-align: center;
+      width: 50%;
     }
 }
 
@@ -266,13 +270,10 @@
     box-shadow: 4px 4px 110px rgba(252, 80, 80, 0.08);
 border-radius: 10px;
 }
-.drop-profile-img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
+
 .drop-profile-img img{
     width: 100%;
+    border-radius: 50%;
 }
 .drop-conent h4{
     font-size: 18px;
@@ -343,7 +344,10 @@ border-radius: 10px;
     padding: 50px;
 }
 .edit-create-collection-wrapper {
-  border-radius: 20px;
+  border-radius: 10px;
+}
+.save-collection-btn{
+  width: 100%;
 }
 }
 @media screen and (max-width: 700px) {
@@ -367,7 +371,7 @@ border-radius: 10px;
   width: 350px;
 }
 .edit-create-collection {
-  padding: 80px 10px 20px 10px;
+  padding: 140px 10px 20px 10px;
 }
 .edit-col {
   width: 100%;
@@ -388,12 +392,14 @@ border-radius: 10px;
 }
 .new-create-collection-item .input-img-feild {
   width: 100%;
-  height: 100%;
+  height: 250px;
 }
 .save-col-btn {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 .save-collection-btn-at {
   margin-right: 00px;

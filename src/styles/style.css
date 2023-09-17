@@ -3209,24 +3209,92 @@ li.active p {
 li.active svg {
   fill: red;
 }
-
-ul.tranding-cat {
-  display: flex;
-  align-items: center;
+.items-sidebar .tranding-bar{
+  padding: 30px 50px;
+border-right: 1px solid #ddd;
 }
-
+.items-sidebar .tranding-bar h4{
+  color: var(--second-color);
+  font-size: 25px;
+  font-weight: 700;
+}
+ul.tranding-cat {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 a.tranding-cat-lin {
-  padding: 5px 15px;
-  margin: 10px;
+  padding: 10px 50px;
   background: #ebebeb;
   border-radius: 8px;
   border: 2px solid #ddd;
   color: var(--second-color);
-  font-weight: 500;
-  font-size: 18px;
   transition: 0.3s;
+  margin: 5px 0;
   white-space: nowrap;
 }
+a.tranding-cat-lin button{
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.items-traits-con h4{
+  color: var(--second-color);
+  font-size: 25px;
+  font-weight: 700;
+}
+.items-traits-con{
+margin-top: 40px;
+}
+.items-traits-con h4{
+  font-size: 25px;
+  font-weight: 700;
+}
+.items-traits-ul .traits-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+}
+.items-traits-ul .traits-list.active h5{
+color: var(--main-color);
+}
+.items-traits-ul .traits-list h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--second-color);
+}
+.items-traits-ul .traits-list .traits-icon{
+  color: var(--second-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+.items-traits-ul .traits-list.active .traits-icon{
+transform: rotate(180deg);
+}
+
+
+.item-traits-content{
+  display: none;
+}
+.item-traits-content.active{
+  display: block;
+}
+.item-traits-content .traits-input input{
+  width: 20px;
+  height: 20px;
+  accent-color: var(--main-color);
+}
+.item-traits-content .traits-input label{
+  color: var(--second-color);
+  font-weight: 400;
+}
+
+
+
 
 .dp-fiexd {
   display: flex;
@@ -3234,11 +3302,7 @@ a.tranding-cat-lin {
   white-space: nowrap;
 }
 
-.tranding-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 .dp-menu-item {
   background: var(--main-color);
@@ -3259,9 +3323,8 @@ a.tranding-cat-lin {
 }
 
 a.tranding-cat-lin:hover {
-  background: var(--main-color);
+  background: #f88282;
   color: var(--white-color);
-  border-color: var(--main-color);
 }
 
 .profile-des p {

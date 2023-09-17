@@ -195,6 +195,9 @@ li.nav-list:hover .dp-menu {
         left: 0;
         text-align: center;
     }
+    li.nav-list{
+        padding: 10px 0;
+    }
     .connect-btn-mobile{
         width: 300px;
         margin: auto;
@@ -227,7 +230,7 @@ li.nav-list:hover .dp-menu {
         align-items: center;
         position: fixed;
         height: 100vh;
-        background: #03091fe3;
+        background: var(--main-color);
         bottom: 0;
         box-shadow: -2px 5px 13px 0px #0b0c11;
         top: 0;
@@ -238,7 +241,7 @@ li.nav-list:hover .dp-menu {
         backdrop-filter: blur(3px);
         width: 100%;
         text-align: center;
-        padding-top: 60px;
+        padding-top: 120px;
     }
     a.nav-link {
         padding-left: 0;

@@ -1,15 +1,11 @@
 "use client";
 import React,{useState} from 'react';
 import Link from 'next/link';
-const Sidebar = () => {
-
+const Sidebar = ({sidebarActive , _toggleSidebar2}) => {
+ 
     const [toggle, setToggle] = useState(1);
     const togglebtn = (index) => {
       setToggle(index);
-    };
-    const [sidebarActive, setSidebarActive] = useState(false);
-    const _toggleSidebar2 = () => {
-      setSidebarActive(!sidebarActive);
     };
   return (
     <>

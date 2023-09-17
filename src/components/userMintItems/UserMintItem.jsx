@@ -9,7 +9,7 @@ const UserMintItem = () => {
   return (
     <>
       <div className="row">
-        <div className="col-lg-6 col-md-12">
+        <div className="col-lg-6 col-md-12 ">
           <div className="mint-col-items">
             <h2>About This Collection</h2>
             <div className="mint-col-profile">

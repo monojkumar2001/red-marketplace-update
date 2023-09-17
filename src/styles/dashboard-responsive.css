@@ -1,39 +1,45 @@
 /* ===================== user-Admin ===================== */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
   .sidebar-close-menu {
     display: block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
   }
   .user-admin-left {
     padding: 50px 30px;
     background: #f4f6f9;
     left: -100%;
-    width: 0;
+    width: 100%;
     display: block;
     position: fixed;
     top: 85px;
     bottom: 0;
     z-index: 9;
     transition: 0.4s;
+    z-index: 12;
   }
+
   .user-content {
     width: 100%;
-    padding: 40px 30px 80px 30px;
+    padding: 50px 20px 50px 20px;
     background: #ffffff;
+}
+.user-admin-warrper{
+  margin-top: 50px;
 }
   .open-menu {
     display: flex;
   }
   .sidebar-menu-icons {
     display: block;
+    cursor: pointer;
+left: 30px;
+ position: absolute;
   }
   .active.user-admin-left {
     left: 0;
-  }
-  .user-content {
-    width: 100%;
-    padding: 20px;
-    background: #ffffff;
   }
   .sidebar-close-menu {
     display: block;
@@ -90,6 +96,14 @@
     border: none;
     width: 183px;
   }
+  .user-admin-warrper{
+   margin-top: 80px;
+  }
+  .user-content {
+    width: 100%;
+    padding: 0px 20px 50px 20px;
+    background: #ffffff;
+}
 }
 
 @media screen and (max-width: 550px) {

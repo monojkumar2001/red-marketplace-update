@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const CollectionSetting = () => {
@@ -58,7 +59,7 @@ const CollectionSetting = () => {
         <div className="new-create-collection-item">
          <div className="drop-profile-stage">
             <div className="drop-profile-img">
-                <img src="assets/img/profile-imgs.png" alt="" />
+                <Image width={60} height={60} src="/assets/img/profile-imgs.png" alt="" />
             </div>
             <div className="drop-conent">
                 <h4>Public Stage</h4>

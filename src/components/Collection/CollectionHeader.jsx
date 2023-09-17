@@ -13,7 +13,7 @@ const CollectionHeader = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-lg-5 col-lg-8 col-md-10">
             <div className="profile-content">
@@ -86,7 +86,7 @@ const CollectionHeader = () => {
                 }`}
                 onClick={() => toggleHandler(1)}
               >
-                <Link href={"/collection"}>
+                <Link href={"/collection/items"}>
                   <svg
                     width="20"
                     height="20"
