@@ -2,6 +2,7 @@
   "name": "red-marketplace-update",
   "version": "0.1.0",
   "private": true,
+  "experimental-server-components": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
