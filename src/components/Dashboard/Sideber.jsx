@@ -120,7 +120,7 @@ const Sideber = ({sidebarActive,toggleSidebar}) => {
             <span>Offers made</span>
             </Link>
           </div>
-          <div className="user-category-link" >
+          <div className="user-category-link"  onClick={toggleSidebar} >
             <Link
             href={"/account/deals"}
               className={`${
@@ -176,7 +176,7 @@ const Sideber = ({sidebarActive,toggleSidebar}) => {
             <span>Favorited</span>
             </Link>
           </div>
-          <Link href="/user-profile" className="user-category-item">
+          <Link href="/user-profile" className="user-category-item" onClick={toggleSidebar}>
             <div className="category-item-icon">
               <svg
                 width="30"

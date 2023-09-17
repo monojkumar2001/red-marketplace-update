@@ -104,6 +104,10 @@ left: 30px;
     padding: 0px 20px 50px 20px;
     background: #ffffff;
 }
+.dashboard-header-item{
+  overflow-x: auto;
+  padding: 0 20px 20px 20px;
+}
 }
 
 @media screen and (max-width: 550px) {
