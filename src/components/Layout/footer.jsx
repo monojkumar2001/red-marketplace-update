@@ -1,4 +1,5 @@
-import Link  from "next/link";
+import Link from "next/link";
+import { FaFacebookF, FaTwitter, FaLinkedin, FaDiscord } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
@@ -24,22 +25,22 @@ function Footer() {
                     <ul className="social-ul">
                       <li>
                         <Link href="/" className="social-link">
-                          <i className="icofont-facebook"></i>
+                          <FaFacebookF />
                         </Link>
                       </li>
                       <li>
                         <Link href="/" className="social-link">
-                          <i className="icofont-twitter"></i>
+                          <FaTwitter />
                         </Link>
                       </li>
                       <li>
                         <Link href="" className="social-link">
-                          <i className="icofont-linkedin"></i>
+                          <FaLinkedin />
                         </Link>
                       </li>
                       <li>
                         <Link href="" className="social-link">
-                          <i className="icofont-pinterest"></i>
+                          <FaDiscord />
                         </Link>
                       </li>
                     </ul>
@@ -51,25 +52,25 @@ function Footer() {
                   <div className="footer-title">
                     <h3 className="f-title">My Account</h3>
                   </div>
-                  <ul className="footer-menu">
+                  <ul className="footer-menu footer-menu d-flex flex-column gap-2">
                     <li className="footer-list">
                       <Link href="/author" className="footer-link">
-                      Authors
+                        Authors
                       </Link>
                     </li>
                     <li className="footer-list">
-                      <Link href="/collection" className="footer-link" > 
-                      Collection
+                      <Link href="/collection" className="footer-link">
+                        Collection
                       </Link>
                     </li>
                     <li className="footer-list">
                       <Link href="/collection-create" className="footer-link">
-                      Create  Collection 
+                        Create Collection
                       </Link>
                     </li>
                     <li className="footer-list">
                       <Link href="/item-create" className="footer-link">
-                      Create Items
+                        Create Items
                       </Link>
                     </li>
                   </ul>
@@ -80,25 +81,25 @@ function Footer() {
                   <div className="footer-title">
                     <h3 className="f-title">Resources</h3>
                   </div>
-                  <ul className="footer-menu">
+                  <ul className="footer-menu d-flex flex-column gap-2">
                     <li className="footer-list">
                       <Link href="/help" className="footer-link">
-                      Help & Support
+                        Help & Support
                       </Link>
                     </li>
                     <li className="footer-list">
                       <Link href="/action" className="footer-link">
-                      Live Auctions
+                        Live Auctions
                       </Link>
                     </li>
                     <li className="footer-list">
                       <Link href="/item" className="footer-link">
-                      Item Details
+                        Item Details
                       </Link>
                     </li>
                     <li className="footer-list">
                       <Link href="/activity" className="footer-link">
-                      Activity
+                        Activity
                       </Link>
                     </li>
                   </ul>
@@ -109,20 +110,20 @@ function Footer() {
                   <div className="footer-title">
                     <h3 className="f-title">Company</h3>
                   </div>
-                  <ul className="footer-menu">
+                  <ul className="footer-menu footer-menu d-flex flex-column gap-2">
                     <li className="footer-list">
                       <Link href="" className="footer-link">
-                      About Us
+                        About Us
                       </Link>
                     </li>
                     <li className="footer-list">
                       <Link href="/contact" className="footer-link">
-                      Contact Us
+                        Contact Us
                       </Link>
                     </li>
                     <li className="footer-list">
                       <Link href="" className="footer-link">
-                      Our Blog
+                        Our Blog
                       </Link>
                     </li>
                   </ul>
@@ -134,7 +135,7 @@ function Footer() {
                   <div className="footer-title">
                     <h3 className="f-title">Newsletter</h3>
                   </div>
-                  <p className="footer-des">
+                  <p className="footer-des mb-3">
                     Fill their seed open meat. Sea you great Saw image stl
                   </p>
 
@@ -143,7 +144,7 @@ function Footer() {
                       <input
                         type="text"
                         className="form-control subscribe"
-                        placeholder="Search..."
+                        placeholder="Enter your email..."
                       />
                       <button className="subscribe-btn" type="submit">
                         <svg
@@ -166,7 +167,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="copy-right">
+          <div className="copy-right d-flex justify-content-center">
             <p className="copy-text">
               Copyright 2021, NFT Constructer All Rights Reserved.
             </p>

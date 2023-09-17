@@ -312,7 +312,7 @@ p.footer-des {
 a.footer-link {
     color: var(--white-color);
     transition: 0.3s;
-    padding: 5px 0;
+    font-size: 18px;
 }
 
 a.footer-link:hover {
@@ -378,8 +378,11 @@ form.subscribe-box {
     display: flex;
     align-items: center;
     background: var(--white-color);
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px 0px #742222;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 0px #742222;
+}
+form.subscribe-box .form-control::placeholder{
+    color: var(--second-color) !important;
 }
 
 button.subscribe-btn {

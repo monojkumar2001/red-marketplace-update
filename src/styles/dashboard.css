@@ -27,7 +27,7 @@
   fill: var(--white-color);
 }
 .user-category-item:hover {
-  background: var(--main-color);
+  background: #f37171;
   border-radius: 6px;
   color: white;
 }

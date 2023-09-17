@@ -317,20 +317,7 @@
     .item .container .item-right .bid-history .history .left .name h1 span {
         font-size: 12px;
     }
-    .item .container .item-right .bid-history .history .left .name p {
-        font-size: 12px;
-        margin-top: 4px;
-    }
-    .item .container .item-right .bid-history .history .right h1 {
-        font-size: 14px;
-    }
-    .item .container .item-right .bid-history .history .right p {
-        font-size: 12px;
-        margin-top: 4px;
-    }
-    .item .container .item-right {
-        padding-left: 30px;
-    }
+
 }
 
 @media screen and (max-width: 1215px) {
@@ -346,13 +333,13 @@
         align-items: center;
     }
     .item .container .item-left .item-img {
-        width: 675px;
+       width: 100%;
     }
     .item .container .item-right {
         width: 100%;
-        padding-left: 0px;
         padding-top: 20px;
     }
+    
 }
 
 @media screen and (max-width: 450px) {
@@ -366,10 +353,8 @@
         text-align: center;
     }
     .item .container .item-right .ownership {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
     }
     .item .container .item-right .item-info {
         display: flex;

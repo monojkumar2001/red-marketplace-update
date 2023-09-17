@@ -7,7 +7,7 @@ const CollectionCard = () => {
       {data.map((item, i) => {
        return(
         <div className="col-md-6 col-lg-4 col-xl-3 mb-4" key={i}>
-        <Link href="/" >
+        <Link href="/items" >
      <div className={style.product_card}>
      <div className={style.product_image}>
             <img src={item.img} alt=""/>

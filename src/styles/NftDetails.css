@@ -1,18 +1,14 @@
 .nft-details-item-con {
-  display: flex;
-  align-items: flex-start;
-  gap: 50px;
-  width: 80%;
+  /* display: flex; */
+  /* align-items: flex-start; */
+  /* gap: 50px; */
+  /* width: 100%; */
   margin: auto;
   padding-top: 50px;
 }
-.nft-details-item-con .item-left .item-img {
-    width: 467px;
-    height: 490px;
-}
+
 .nft-details-item-con .item-left .item-img img {
     width: 100%;
-    height: 100%;
     border-radius: 10px;
   }
 .nft-details-item-con .ownership {
@@ -145,4 +141,10 @@ border-radius: 5px;
 .collection-details-con .owner  h4{
     font-size: 20px;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 550px) {
+  .nft-details-item-con {
+    padding-top: 0px;
+  }
 }

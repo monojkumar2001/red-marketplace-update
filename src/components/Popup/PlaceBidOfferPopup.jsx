@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import { useState } from "react";
 
 const PlaceBidOfferPopup = () => {
@@ -35,10 +36,10 @@ const number=(e)=>{
             <div className="wallet-content-wrapper d-flex flex-column gap-2">
               <div className="nft-items-headers d-flex align-items-center gap-3">
                 <div className="nft-imgs">
-                  <LazyLoadImage
+                <Image
                     src="/assets/img/collection/1.png"
-                    width="50px"
-                    height="50px"
+                    width={50}
+                    height={50}
                     alt=""
                   />
                 </div>
@@ -74,16 +75,17 @@ const number=(e)=>{
               <hr />
               <div className="nft-validity-items mb-3 d-flex algin-items-center justify-content-between gap-4">
                 <p>Validity</p>
-                <select className="form-select" aria-label="Default select example">
+                {/* <select className="form-select" aria-label="Default select example">
                   <option selected>30 days</option>
                   <option value="1">1 days</option>
                   <option value="2">7 days</option>
                   <option value="3">14 days</option>
-                </select>
+                </select> */}
+                <input type="date"  className="form-select" />
               </div>
               <div className="nft-btn-items d-flex align-items-center gap-3">
                 <button className="bid-btn-init alt-bid-btn-init">Cancel</button>
-                <button className="bid-btn-init">Place Bid Offer</button>
+                <button className="bid-btn-init">Confirm</button>
               </div>
             </div>
           </div>

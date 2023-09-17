@@ -159,27 +159,6 @@ table.table {
     border: none;
     text-transform: uppercase;
 }
-.custom-btn:hover {
-    color: #ffffff;
-}
-.custom-btn:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%) scale(0);
-    width: 1px;
-    height: 1px;
-    background: var(--main-color);
-    opacity: 0;
-    border-radius: 50%;
-    transition: 0.5s ease-in-out;
-}
-
-.custom-btn:hover:before {
-    transform: translate(-50%) scale(310);
-    opacity: 1;
-}
 
 .custom-btn span {
     position: relative;
@@ -243,7 +222,10 @@ table.table {
     outline: 0px;
     box-shadow: none;
 }
-
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused :focus{
+    color: var(--main-color);
+    border: 1px solid #e03939 ;
+}
 
 /* =============padding margin class============= */
 

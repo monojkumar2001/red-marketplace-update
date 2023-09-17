@@ -16,7 +16,7 @@
 }
 h1.banner_title {
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 15px 0;
   line-height: 75px;
   color: #0c0c0c;
@@ -47,7 +47,13 @@ h1.banner_title {
 
 @media screen and (max-width: 1250px) {
   .banner {
-    background-image: none;
+    align-items: center;
+    /* background: linear-gradient(180deg, #6835f8 0%, #4d20ca 100%); */
+    background-image: url(../../public/assets/img/banner/2.jpg);
+    padding-top: 100px;
+    background-size:100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 }
 
@@ -66,9 +72,17 @@ h1.banner_title {
     font-size: 45px;
     line-height: 55px;
   }
+  
+.banner_content {
+  width: 100%;
+  padding: 0 10px;
+}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
+  .banner {
+    min-height: 600px;
+  }
   h1.banner_title {
     font-size: 30px;
     line-height: 45px;

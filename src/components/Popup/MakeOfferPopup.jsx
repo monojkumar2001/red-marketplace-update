@@ -81,7 +81,7 @@ const number=(e)=>{
                 </select>
               </div>
               <div className="nft-btn-items d-flex align-items-center gap-3">
-                <button className="bid-btn-init">Make Offer</button>
+                <button className="bid-btn-init">Confirm</button>
               </div>
             </div>
           </div>

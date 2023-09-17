@@ -8,14 +8,19 @@
     padding: 50px 30px;
     background: #f4f6f9;
     left: -100%;
+    width: 0;
     display: block;
     position: fixed;
     top: 85px;
     bottom: 0;
     z-index: 9;
     transition: 0.4s;
-    width: 330px;
   }
+  .user-content {
+    width: 100%;
+    padding: 40px 30px 80px 30px;
+    background: #ffffff;
+}
   .open-menu {
     display: flex;
   }

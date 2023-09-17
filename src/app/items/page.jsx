@@ -13,6 +13,9 @@ import CollectionDetailsItem from "@/components/NftItems/CollectionDetailsItem";
 import MakeOfferPopup from "@/components/Popup/MakeOfferPopup";
 import NftTransection from "@/components/NftItems/NftTransection";
 import PageBanner from "@/components/Banner/PageBanner";
+import Image from "next/image";
+import NFTModelCongratulations from "@/components/Popup/NFTModelCongratulations";
+import PlaceBidOfferPopup from "@/components/Popup/PlaceBidOfferPopup";
 
 function Items() {
   const [toggleActive, setToggleActive] = useState(0);
@@ -33,10 +36,10 @@ function Items() {
       {/* <!-- ============feature============== --> */}
       <section className="item cpy-6">
         <div className="container">
-          <div className="nft-details-item-con">
-            <div className="item-left">
+          <div className="nft-details-item-con row g-4">
+            <div className="item-left col-lg-5 col-md-12">
               <div className="item-img">
-                <img src="assets/img/collection/1.jpg" alt="" />
+                <Image width={450} height={490} src="/assets/img/collection/1.jpg" alt="" />
               </div>
               <div className="nft-toggle-bar">
                 <div
@@ -124,11 +127,11 @@ function Items() {
                 </div>
               </div>
             </div>
-            <div className="item-right">
+            <div className="item-right col-lg-7 col-md-12">
               <div className="ownership">
                 <div className="owner">
                   <div className="avatar">
-                    <img src="assets/img/inner/7.jpg" alt="" />
+                    <img src="/assets/img/inner/7.jpg" alt="" />
                   </div>
                   <div className="name">
                     <p>Owned By</p>
@@ -163,7 +166,9 @@ function Items() {
                 <button className="bid-btn-init w-100">
                   <span>Not listed</span>
                 </button>
-                <MakeOfferPopup />
+                {/* <MakeOfferPopup /> */}
+                {/* <NFTModelCongratulations/> */}
+                <PlaceBidOfferPopup/>
               </div>
 
               <div className="nft-toggle-bar">

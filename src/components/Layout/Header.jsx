@@ -89,15 +89,6 @@ function Header() {
                           Explore
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          href="/action"
-                          className="dp-link"
-                          onClick={_toggleSidebar}
-                        >
-                          Auctions
-                        </Link>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -134,15 +125,6 @@ function Header() {
                       </li>
                       <li>
                         <Link
-                          href="/author"
-                          className="dp-link"
-                          onClick={_toggleSidebar}
-                        >
-                          Authors
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
                           href="/my-collection"
                           className="dp-link"
                           onClick={_toggleSidebar}
@@ -158,6 +140,15 @@ function Header() {
                           onClick={_toggleSidebar}
                         >
                           Ranking
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/listing"
+                          className="dp-link"
+                          onClick={_toggleSidebar}
+                        >
+                          Listing
                         </Link>
                       </li>
                       <li>

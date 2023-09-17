@@ -1,6 +1,7 @@
 'use client'
+import Image from "next/image";
 import { useState } from "react";
-const MakeOfferPopup = () => {
+const NFTModelCongratulations = () => {
   const [popupActive, setPopupActive] = useState(false);
   const toggleHandlePopup = () => {
     setPopupActive(!popupActive);
@@ -16,7 +17,7 @@ const number=(e)=>{
   return (
     <>
       <button className="bid-btn-init w-100" onClick={toggleHandlePopup}>
-        <span>Make offer</span>
+        <span>congratulations</span>
       </button>
       {popupActive && (
         <div className="wallet_model">
@@ -34,10 +35,10 @@ const number=(e)=>{
             <div className="wallet-content-wrapper d-flex flex-column gap-2">
               <div className="nft-items-headers d-flex align-items-center gap-3">
                 <div className="nft-imgs">
-                  <LazyLoadImage
+                  <Image
                     src="/assets/img/collection/1.png"
-                    width="50px"
-                    height="50px"
+                    width={50}
+                    height={50}
                     alt=""
                   />
                 </div>
@@ -91,4 +92,4 @@ const number=(e)=>{
   );
 };
 
-export default MakeOfferPopup;
+export default NFTModelCongratulations;
